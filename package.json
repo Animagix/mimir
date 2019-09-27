@@ -1,0 +1,22 @@
+{
+  "name": "mimir",
+  "version": "0.0.1",
+  "description": "making puzzles",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Animagix/mimir.git"
+  },
+  "keywords": [
+    "puzzle"
+  ],
+  "author": "sergio jimenez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Animagix/mimir/issues"
+  },
+  "homepage": "https://github.com/Animagix/mimir#readme"
+}
