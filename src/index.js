@@ -1,4 +1,4 @@
-import { dragMoveListener } from 'utils/dragMoveListener.js';
+import { dragMoveListener } from './utils/dragMoveListener.js';
 
 // enable draggables to be dropped into this
 interact('.dropzone').dropzone({

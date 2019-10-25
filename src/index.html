@@ -78,17 +78,11 @@
     </style>
 
     <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
 </head>
 <body>
 <div class='puzzle'>
     <div class='puzzle__pieces'>
-
-        <div id="outer-dropzone" class="dropzone">
-            #outer-dropzone
-            <div id="inner-dropzone" class="dropzone">#inner-dropzone</div>
-        </div>
-
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1136 640">
             <defs>
                 <pattern id="img1" patternUnits="userSpaceOnUse" width="1136" height="640">
@@ -160,7 +154,10 @@
                  229.00,52.00 229.00,0.00 229.00,0.00
                  229.00,0.00 455.00,0.00 455.00,0.00 Z"/>
         </svg>
-
+        <div id="outer-dropzone" class="dropzone">
+            #outer-dropzone
+            <div id="inner-dropzone" class="dropzone">#inner-dropzone</div>
+        </div>
     </div>
 </div>
 </body>
