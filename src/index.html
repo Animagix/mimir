@@ -26,11 +26,68 @@
         .piece2 {
             background-position:-100px -100px
         }
+
+        #outer-dropzone {
+            height: 140px;
+        }
+
+        #inner-dropzone {
+            height: 80px;
+        }
+
+        .dropzone {
+            background-color: #ccc;
+            border: dashed 4px transparent;
+            border-radius: 4px;
+            margin: 10px auto 30px;
+            padding: 10px;
+            width: 80%;
+            transition: background-color 0.3s;
+        }
+
+        .drop-active {
+            border-color: #aaa;
+        }
+
+        .drop-target {
+            background-color: #29e;
+            border-color: #fff;
+            border-style: solid;
+        }
+
+        .drag-drop {
+            display: inline-block;
+            min-width: 40px;
+            padding: 2em 0.5em;
+
+            color: #fff;
+            background-color: #29e;
+            border: solid 2px #fff;
+
+            touch-action: none;
+            -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+
+            transition: background-color 0.3s;
+        }
+
+        .drag-drop.can-drop {
+            color: #000;
+            background-color: #4e4;
+        }
     </style>
+
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
 <div class='puzzle'>
     <div class='puzzle__pieces'>
+
+        <div id="outer-dropzone" class="dropzone">
+            #outer-dropzone
+            <div id="inner-dropzone" class="dropzone">#inner-dropzone</div>
+        </div>
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1136 640">
             <defs>
@@ -38,7 +95,7 @@
                     <image xlink:href="pictures/animals.jpeg" x="0" y="0" width="1136" height="640" />
                 </pattern>
             </defs>
-                    <path class="piece1" fill="url(#img1)" d="M 228.00,0.00
+                    <path id="yes-drop" class="piece1 drag-drop" fill="url(#img1)" d="M 228.00,0.00
                    C 228.00,0.00 228.00,52.00 228.00,52.00
                      228.00,53.97 227.89,57.15 228.60,58.95
                      231.78,66.94 242.24,62.94 248.00,61.27
