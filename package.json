@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Animagix/mimir/issues"
   },
-  "homepage": "https://github.com/Animagix/mimir#readme"
+  "homepage": "https://github.com/Animagix/mimir#readme",
+  "dependencies": {
+    "interactjs": "^1.6.2"
+  }
 }
