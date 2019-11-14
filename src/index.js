@@ -1,3 +1,4 @@
+
 import { dragMoveListener } from './utils/dragMoveListener.js';
 
 // enable draggables to be dropped into this
@@ -5,7 +6,7 @@ interact('.dropzone').dropzone({
     // only accept elements matching this CSS selector
     accept: '#yes-drop',
     // Require a 75% element overlap for a drop to be possible
-    overlap: 0.75,
+    overlap: 0.60,
 
     // listen for drop related events:
 
@@ -26,10 +27,11 @@ interact('.dropzone').dropzone({
         // remove the drop feedback style
         event.target.classList.remove('drop-target');
         event.relatedTarget.classList.remove('can-drop');
-        event.relatedTarget.textContent = 'Dragged out'
+
+        event.relatedTarget.style.stroke = 'red';
     },
     ondrop: function (event) {
-        event.relatedTarget.textContent = 'Dropped';
+        event.relatedTarget.style.stroke = 'green';
     },
     ondropdeactivate: function (event) {
         // remove active dropzone feedback

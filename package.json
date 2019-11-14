@@ -4,7 +4,8 @@
   "description": "making puzzles",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "serve ./src/"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/Animagix/mimir#readme",
   "dependencies": {
-    "interactjs": "^1.6.2"
+    "interactjs": "^1.6.2",
+    "serve": "^11.2.0"
   }
 }
